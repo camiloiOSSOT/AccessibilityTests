@@ -22,6 +22,12 @@ struct ReadingGroupDataView: View {
                     Text("1000")
                         .font(.title)
                 }
+                
+                VStack{
+                    Text("Your score is")
+                    Text("1000")
+                        .font(.title)
+                }
                 .accessibilityElement(children: .combine)
                 
                 VStack{

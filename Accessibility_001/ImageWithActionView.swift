@@ -82,14 +82,20 @@ struct ImageWithActionView: View {
     }
     
     var image_with_button_future: some View {
-        Button {
+        let now = Date.now
+        return Button {
             selectedPicture = randomInt
         } label: {
-            Image(pictures[selectedPicture])
-                .resizable()
-                .scaledToFit()
+            ZStack {
+                Image(pictures[selectedPicture])
+                    .resizable()
+                    .scaledToFit()
+                
+                Text(now, format: .dateTime)
+            }
         }
-        .accessibilityLabel(labelsPictures[selectedPicture])
+        .accessibilityElement()
+        .accessibilityLabel("\(labelsPictures[selectedPicture]) on \(Text(now, format: .dateTime))")
     }
 
 }
