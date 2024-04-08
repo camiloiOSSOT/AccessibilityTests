@@ -34,6 +34,12 @@ struct ContentView: View {
                         title: { Text("Four") },
                         icon: { Image(systemName: "4.circle") }
                     ) }
+                
+                ScrollAccessView()
+                    .tabItem { Label(
+                        title: { Text("Five") },
+                        icon: { Image(systemName: "5.circle") }
+                    ) }
             }
             .toolbarBackground(.automatic, for: .tabBar)
             .toolbarBackground(.visible, for: .tabBar)

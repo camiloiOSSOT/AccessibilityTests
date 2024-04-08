@@ -33,8 +33,9 @@ struct ImageWithActionView: View {
             image_with_button_current
             image_with_button_accessibility_001
             image_with_button_accessibility_002
-            image_with_button_accessibility_003
-            image_with_button_future
+            image_with_button_future_gesture_without
+            image_with_button_future_gesture_with
+            image_with_button_for_scrollview
         }
         .padding()
     }
@@ -69,7 +70,7 @@ struct ImageWithActionView: View {
             .accessibilityAddTraits(.isButton)
     }
     
-    var image_with_button_accessibility_003: some View {
+    var image_with_button_future_gesture_without: some View {
         Image(pictures[selectedPicture])
             .resizable()
             .scaledToFit()
@@ -81,7 +82,7 @@ struct ImageWithActionView: View {
             .accessibilityRemoveTraits(.isImage)
     }
     
-    var image_with_button_future: some View {
+    var image_with_button_future_gesture_with: some View {
         let now = Date.now
         return Button {
             selectedPicture = randomInt
@@ -96,6 +97,10 @@ struct ImageWithActionView: View {
         }
         .accessibilityElement()
         .accessibilityLabel("\(labelsPictures[selectedPicture]) on \(Text(now, format: .dateTime))")
+    }
+    
+    var image_with_button_for_scrollview: some View {
+        image_with_button_current
     }
 
 }

@@ -20,29 +20,30 @@ struct ReadingGroupDataView: View {
                 VStack{
                     Text("Your score is")
                     Text("1000")
-                        .font(.title)
                 }
+                .font(.largeTitle)
                 
                 VStack{
                     Text("Your score is")
                     Text("1000")
-                        .font(.title)
                 }
+                .font(.title)
+                
                 .accessibilityElement(children: .combine)
                 
                 VStack{
                     Text("Your score is")
                     Text("1000")
-                        .font(.title)
                 }
+                .font(.body)
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("Your score is 1000")
                 
                 VStack{
                     Text("Your score is")
                     Text("1000")
-                        .font(.title)
                 }
+                .font(.caption2)
                 .accessibilityElement()
                 .accessibilityLabel("Your score is 1000")
             }

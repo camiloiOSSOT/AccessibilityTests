@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ReadingLabelWithSomeOutputsView: View {
+    init() {
+        UIScrollView.appearance().bounces = true
+    }
+    
     var body: some View {
-        Button ("John Fitzgerald Kennedy") {
-            print("Button tapped")
+        ScrollView {
+            Button ("John Fitzgerald Kennedy") {
+                print("Button tapped")
+            }
+            .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
         }
-        .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
+        .onAppear {
+            UIScrollView.appearance().bounces = true
+        }
     }
 }
 
