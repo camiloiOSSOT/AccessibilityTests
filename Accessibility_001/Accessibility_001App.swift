@@ -27,23 +27,27 @@ public enum ScrollBounceBehavioriOS15 {
 }
 
 extension View {
-    @ViewBuilder func scrollBouncesBehavioriOS15(_ behavior: ScrollBounceBehavioriOS15, axes: Axis.Set = [.vertical]) -> some View {
+    @ViewBuilder func scrollBounceBehavioriOS15(_ behavior: ScrollBounceBehavioriOS15, axes: Axis.Set = [.vertical]) -> some View {
 
         if #available(iOS 16.4, *) {
-            var bouncesType: ScrollBounceBehavior = .always
-            switch behavior {
-            case .automatic:
-                bouncesType = .automatic
-            case .always:
-                bouncesType = .always
-            case .basedOnSize:
-                bouncesType = .basedOnSize
-            }
-            return self.scrollBounceBehavior(bouncesType, axes: axes)
+            self.scrollBounceBehavior(getBehaviorScroll(behavior), axes: axes)
         } else {
             // Fallback on earlier versions
-            return self
+            self
         }
-
+    }
+    
+    @available(iOS 16.4, *)
+    private func getBehaviorScroll(_ behavior: ScrollBounceBehavioriOS15) -> ScrollBounceBehavior {
+        var bouncesType: ScrollBounceBehavior = .always
+        switch behavior {
+        case .automatic:
+            bouncesType = .automatic
+        case .always:
+            bouncesType = .always
+        case .basedOnSize:
+            bouncesType = .basedOnSize
+        }
+        return bouncesType
     }
 }

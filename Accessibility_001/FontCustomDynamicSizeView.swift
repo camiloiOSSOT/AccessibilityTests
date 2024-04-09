@@ -42,7 +42,7 @@ struct FontCustomDynamicSizeView: View {
                 .font(.customBoldCaption)
 
         }
-        .scrollBouncesBehavioriOS15(.basedOnSize)
+        .scrollBounceBehavioriOS15(.basedOnSize)
     }
 }
 

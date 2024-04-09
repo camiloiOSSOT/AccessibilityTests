@@ -22,7 +22,7 @@ struct ScrollAccessView: View {
                     .frame(maxWidth: .infinity)
             }
         }
-        .scrollBouncesBehavioriOS15(.basedOnSize)
+        .scrollBounceBehavioriOS15(.basedOnSize)
         .frame(maxHeight: .infinity)
         .safeAreaInset(edge: .bottom, content: {
             Button {

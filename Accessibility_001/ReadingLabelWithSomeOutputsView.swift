@@ -19,7 +19,7 @@ struct ReadingLabelWithSomeOutputsView: View {
             }
             .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
         }
-        .scrollBouncesBehavioriOS15(.always)
+        .scrollBounceBehavioriOS15(.always)
 //        .onAppear {
 //            UIScrollView.appearance().bounces = true
 //        }

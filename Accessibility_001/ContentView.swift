@@ -9,46 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            Group {
-                ImageWithActionView()
-                    .tabItem { Label(
-                        title: { Text("First") },
-                        icon: { Image(systemName: "1.circle") }
-                    ) }
-                
-                ReadingGroupDataView()
-                    .tabItem { Label(
-                        title: { Text("Second") },
-                        icon: { Image(systemName: "2.circle") }
-                    ) }
-                
-                ReadingValuesControlsView()
-                    .tabItem { Label(
-                        title: { Text("Third") },
-                        icon: { Image(systemName: "3.circle") }
-                    ) }
-                
-                ReadingLabelWithSomeOutputsView()
-                    .tabItem { Label(
-                        title: { Text("Four") },
-                        icon: { Image(systemName: "4.circle") }
-                    ) }
-                
-                ScrollAccessView()
-                    .tabItem { Label(
-                        title: { Text("Five") },
-                        icon: { Image(systemName: "5.circle") }
-                    ) }
-                
-                FontCustomDynamicSizeView()
-                    .tabItem { Label(
-                        title: { Text("Six") },
-                        icon: { Image(systemName: "6.circle") }
-                    ) }
+        NavigationView {
+            List(examples, id: \.name) { example in
+                NavigationLink(example.name) {
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 10) {
+                            example.view
+                                .padding(8)
+                                .navigationBarTitle(example.name)
+                        }
+                    }
+                }
             }
-//            .toolbarBackground(.automatic, for: .tabBar)
-//            .toolbarBackground(.visible, for: .tabBar)
+            .navigationBarTitle(
+                Text("Examples")
+            )
         }
     }
 }
@@ -56,3 +31,31 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+// MARK: Model
+
+/// A model-level representation of an example.
+struct Example {
+    var name: String
+    var view: AnyView
+
+    init<Content: View>(
+        _ name: String,
+        @ViewBuilder content: @escaping (() -> Content)
+    ) {
+        self.name = name
+        self.view = AnyView(content())
+    }
+}
+
+/// The list of examples to show.
+let examples = [
+    Example("Image with Actions") { ImageWithActionView() },
+    Example("Reading Group") { ReadingGroupDataView() },
+    Example("Component Action") { ReadingValuesControlsView() },
+    Example("Scroll always") { ReadingLabelWithSomeOutputsView() },
+    Example("Scroll onBaseSize") { ScrollAccessView() },
+    Example("Fonts") { FontCustomDynamicSizeView() },
+    Example("Text with Markdown") { MardownTextView() }
+]
