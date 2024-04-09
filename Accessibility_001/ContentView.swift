@@ -40,9 +40,15 @@ struct ContentView: View {
                         title: { Text("Five") },
                         icon: { Image(systemName: "5.circle") }
                     ) }
+                
+                FontCustomDynamicSizeView()
+                    .tabItem { Label(
+                        title: { Text("Six") },
+                        icon: { Image(systemName: "6.circle") }
+                    ) }
             }
-            .toolbarBackground(.automatic, for: .tabBar)
-            .toolbarBackground(.visible, for: .tabBar)
+//            .toolbarBackground(.automatic, for: .tabBar)
+//            .toolbarBackground(.visible, for: .tabBar)
         }
     }
 }

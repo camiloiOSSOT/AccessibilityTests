@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ReadingLabelWithSomeOutputsView: View {
-    init() {
-        UIScrollView.appearance().bounces = true
-    }
+//    init() {
+//        UIScrollView.appearance().bounces = true
+//    }
     
     var body: some View {
         ScrollView {
@@ -19,9 +19,10 @@ struct ReadingLabelWithSomeOutputsView: View {
             }
             .accessibilityInputLabels(["John Fitzgerald Kennedy", "Kennedy", "JFK"])
         }
-        .onAppear {
-            UIScrollView.appearance().bounces = true
-        }
+        .scrollBouncesBehavioriOS15(.always)
+//        .onAppear {
+//            UIScrollView.appearance().bounces = true
+//        }
     }
 }
 

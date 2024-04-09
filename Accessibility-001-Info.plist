@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Palanquin-Bold.ttf</string>
+        <string>Palanquin-ExtraLight.ttf</string>
+        <string>Palanquin-Light.ttf</string>
+        <string>Palanquin-Medium.ttf</string>
+        <string>Palanquin-Regular.ttf</string>
+        <string>Palanquin-SemiBold.ttf</string>
+        <string>Palanquin-Thin.ttf</string>
+    </array>
+</dict>
+</plist>

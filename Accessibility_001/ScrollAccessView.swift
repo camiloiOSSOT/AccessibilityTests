@@ -10,9 +10,9 @@ import SwiftUI
 struct ScrollAccessView: View {
     private var maxElement: Int = 50
     
-    init() {
-        UIScrollView.appearance().bounces = false
-    }
+//    init() {
+//        UIScrollView.appearance().bounces = false
+//    }
     
     var body: some View {
         ScrollView {
@@ -22,7 +22,7 @@ struct ScrollAccessView: View {
                     .frame(maxWidth: .infinity)
             }
         }
-        //.scrollBounceBehavior(.basedOnSize)
+        .scrollBouncesBehavioriOS15(.basedOnSize)
         .frame(maxHeight: .infinity)
         .safeAreaInset(edge: .bottom, content: {
             Button {
@@ -35,16 +35,19 @@ struct ScrollAccessView: View {
             .padding()
             .background(.yellow)
         })
-        .contentMargins(.top, 1)
-        .containerRelativeFrame([.horizontal, .vertical])
+//        .contentMargins(.top, 1)
+//        .containerRelativeFrame([.horizontal, .vertical])
         .background(.purple)
-        
-        .onAppear {
-            UIScrollView.appearance().bounces = false
-        }
-        .onDisappear {
-            UIScrollView.appearance().bounces = true
-        }
+//        .refreshable {
+//            print("capv")
+//        }
+
+//        .onAppear {
+//            UIScrollView.appearance().bounces = false
+//        }
+//        .onDisappear {
+//            UIScrollView.appearance().bounces = true
+//        }
     }
 }
 

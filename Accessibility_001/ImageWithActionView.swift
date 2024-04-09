@@ -97,6 +97,7 @@ struct ImageWithActionView: View {
         }
         .accessibilityElement()
         .accessibilityLabel("\(labelsPictures[selectedPicture]) on \(Text(now, format: .dateTime))")
+        .accessibilityAddTraits(.isButton)
     }
     
     var image_with_button_for_scrollview: some View {

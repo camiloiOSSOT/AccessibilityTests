@@ -16,6 +16,17 @@
 		5EDA96922BA48F980003B55D /* ImageWithActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA96912BA48F980003B55D /* ImageWithActionView.swift */; };
 		5EDA96942BA499EE0003B55D /* ReadingValuesControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA96932BA499EE0003B55D /* ReadingValuesControlsView.swift */; };
 		5EDA96962BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA96952BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift */; };
+		5EFEAC312BC555A600974868 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC272BC555A600974868 /* OFL.txt */; };
+		5EFEAC322BC555A600974868 /* Palanquin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC282BC555A600974868 /* Palanquin-Bold.ttf */; };
+		5EFEAC332BC555A600974868 /* Palanquin-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC292BC555A600974868 /* Palanquin-ExtraLight.ttf */; };
+		5EFEAC342BC555A600974868 /* Palanquin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC2A2BC555A600974868 /* Palanquin-Light.ttf */; };
+		5EFEAC352BC555A600974868 /* Palanquin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC2B2BC555A600974868 /* Palanquin-Medium.ttf */; };
+		5EFEAC362BC555A600974868 /* Palanquin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC2C2BC555A600974868 /* Palanquin-Regular.ttf */; };
+		5EFEAC372BC555A600974868 /* Palanquin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC2D2BC555A600974868 /* Palanquin-SemiBold.ttf */; };
+		5EFEAC382BC555A600974868 /* Palanquin-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EFEAC2E2BC555A600974868 /* Palanquin-Thin.ttf */; };
+		5EFEAC3B2BC55CD300974868 /* AccessiblityFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEAC3A2BC55CD300974868 /* AccessiblityFont.swift */; };
+		5EFEAC3D2BC5807500974868 /* FontCustomDynamicSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEAC3C2BC5807500974868 /* FontCustomDynamicSizeView.swift */; };
+		5EFEAC3F2BC593E300974868 /* MardownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFEAC3E2BC593E300974868 /* MardownTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,18 @@
 		5EDA96912BA48F980003B55D /* ImageWithActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithActionView.swift; sourceTree = "<group>"; };
 		5EDA96932BA499EE0003B55D /* ReadingValuesControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingValuesControlsView.swift; sourceTree = "<group>"; };
 		5EDA96952BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingLabelWithSomeOutputsView.swift; sourceTree = "<group>"; };
+		5EFEAC272BC555A600974868 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		5EFEAC282BC555A600974868 /* Palanquin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-Bold.ttf"; sourceTree = "<group>"; };
+		5EFEAC292BC555A600974868 /* Palanquin-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-ExtraLight.ttf"; sourceTree = "<group>"; };
+		5EFEAC2A2BC555A600974868 /* Palanquin-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-Light.ttf"; sourceTree = "<group>"; };
+		5EFEAC2B2BC555A600974868 /* Palanquin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-Medium.ttf"; sourceTree = "<group>"; };
+		5EFEAC2C2BC555A600974868 /* Palanquin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-Regular.ttf"; sourceTree = "<group>"; };
+		5EFEAC2D2BC555A600974868 /* Palanquin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-SemiBold.ttf"; sourceTree = "<group>"; };
+		5EFEAC2E2BC555A600974868 /* Palanquin-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palanquin-Thin.ttf"; sourceTree = "<group>"; };
+		5EFEAC392BC5567E00974868 /* Accessibility-001-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Accessibility-001-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5EFEAC3A2BC55CD300974868 /* AccessiblityFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessiblityFont.swift; sourceTree = "<group>"; };
+		5EFEAC3C2BC5807500974868 /* FontCustomDynamicSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCustomDynamicSizeView.swift; sourceTree = "<group>"; };
+		5EFEAC3E2BC593E300974868 /* MardownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MardownTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +84,7 @@
 		5EDA96802BA46C530003B55D /* Accessibility_001 */ = {
 			isa = PBXGroup;
 			children = (
+				5EFEAC392BC5567E00974868 /* Accessibility-001-Info.plist */,
 				5EDA96812BA46C530003B55D /* Accessibility_001App.swift */,
 				5EDA96832BA46C530003B55D /* ContentView.swift */,
 				5EDA96912BA48F980003B55D /* ImageWithActionView.swift */,
@@ -68,8 +92,11 @@
 				5EDA96932BA499EE0003B55D /* ReadingValuesControlsView.swift */,
 				5EDA96952BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift */,
 				5E0043252BC4398B00EFA252 /* ScrollAccessView.swift */,
+				5EFEAC3C2BC5807500974868 /* FontCustomDynamicSizeView.swift */,
 				5EDA96852BA46C540003B55D /* Assets.xcassets */,
+				5EFEAC302BC555A600974868 /* Fonts */,
 				5EDA96872BA46C540003B55D /* Preview Content */,
+				5EFEAC3E2BC593E300974868 /* MardownTextView.swift */,
 			);
 			path = Accessibility_001;
 			sourceTree = "<group>";
@@ -80,6 +107,30 @@
 				5EDA96882BA46C540003B55D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EFEAC2F2BC555A600974868 /* Palanquin */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEAC272BC555A600974868 /* OFL.txt */,
+				5EFEAC282BC555A600974868 /* Palanquin-Bold.ttf */,
+				5EFEAC292BC555A600974868 /* Palanquin-ExtraLight.ttf */,
+				5EFEAC2A2BC555A600974868 /* Palanquin-Light.ttf */,
+				5EFEAC2B2BC555A600974868 /* Palanquin-Medium.ttf */,
+				5EFEAC2C2BC555A600974868 /* Palanquin-Regular.ttf */,
+				5EFEAC2D2BC555A600974868 /* Palanquin-SemiBold.ttf */,
+				5EFEAC2E2BC555A600974868 /* Palanquin-Thin.ttf */,
+			);
+			path = Palanquin;
+			sourceTree = "<group>";
+		};
+		5EFEAC302BC555A600974868 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5EFEAC2F2BC555A600974868 /* Palanquin */,
+				5EFEAC3A2BC55CD300974868 /* AccessiblityFont.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +191,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EFEAC372BC555A600974868 /* Palanquin-SemiBold.ttf in Resources */,
+				5EFEAC352BC555A600974868 /* Palanquin-Medium.ttf in Resources */,
+				5EFEAC362BC555A600974868 /* Palanquin-Regular.ttf in Resources */,
+				5EFEAC332BC555A600974868 /* Palanquin-ExtraLight.ttf in Resources */,
+				5EFEAC312BC555A600974868 /* OFL.txt in Resources */,
+				5EFEAC322BC555A600974868 /* Palanquin-Bold.ttf in Resources */,
 				5EDA96892BA46C540003B55D /* Preview Assets.xcassets in Resources */,
+				5EFEAC382BC555A600974868 /* Palanquin-Thin.ttf in Resources */,
 				5EDA96862BA46C540003B55D /* Assets.xcassets in Resources */,
+				5EFEAC342BC555A600974868 /* Palanquin-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,12 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EDA96942BA499EE0003B55D /* ReadingValuesControlsView.swift in Sources */,
+				5EFEAC3D2BC5807500974868 /* FontCustomDynamicSizeView.swift in Sources */,
 				5E0043262BC4398B00EFA252 /* ScrollAccessView.swift in Sources */,
 				5EDA96922BA48F980003B55D /* ImageWithActionView.swift in Sources */,
 				5EDA96902BA489800003B55D /* ReadingGroupDataView.swift in Sources */,
 				5EDA96962BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift in Sources */,
+				5EFEAC3F2BC593E300974868 /* MardownTextView.swift in Sources */,
 				5EDA96842BA46C530003B55D /* ContentView.swift in Sources */,
 				5EDA96822BA46C530003B55D /* Accessibility_001App.swift in Sources */,
+				5EFEAC3B2BC55CD300974868 /* AccessiblityFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +357,13 @@
 				DEVELOPMENT_TEAM = 44A73TBZZE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accessibility-001-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +371,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seidoropentrends.testing.Accessibility-001";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,11 +392,13 @@
 				DEVELOPMENT_TEAM = 44A73TBZZE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accessibility-001-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,9 +406,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seidoropentrends.testing.Accessibility-001";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
