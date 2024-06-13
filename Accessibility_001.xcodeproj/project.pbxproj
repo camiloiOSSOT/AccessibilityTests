@@ -93,10 +93,10 @@
 				5EDA96952BA4A61F0003B55D /* ReadingLabelWithSomeOutputsView.swift */,
 				5E0043252BC4398B00EFA252 /* ScrollAccessView.swift */,
 				5EFEAC3C2BC5807500974868 /* FontCustomDynamicSizeView.swift */,
+				5EFEAC3E2BC593E300974868 /* MardownTextView.swift */,
 				5EDA96852BA46C540003B55D /* Assets.xcassets */,
 				5EFEAC302BC555A600974868 /* Fonts */,
 				5EDA96872BA46C540003B55D /* Preview Content */,
-				5EFEAC3E2BC593E300974868 /* MardownTextView.swift */,
 			);
 			path = Accessibility_001;
 			sourceTree = "<group>";
@@ -376,6 +376,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -411,6 +412,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
