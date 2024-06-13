@@ -13,8 +13,10 @@ struct MardownTextView: View {
     var body: some View {
         VStack(alignment: .center) {
             Text("Hello, **World!**")
+                .padding()
             
             Text(text)
+                .font(.largeTitle)
             
             Divider()
             
