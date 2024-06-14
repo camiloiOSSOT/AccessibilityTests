@@ -50,6 +50,7 @@ struct Example {
 }
 
 /// The list of examples to show.
+@MainActor
 let examples = [
     Example("Image with Actions") { ImageWithActionView() },
     Example("Reading Group") { ReadingGroupDataView() },
